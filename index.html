@@ -48,6 +48,13 @@
 					<p>
 						<small><a href="http://digitalscholarship.triptronix.net/">Trip Kirkpatrick</a> / twitter: <a href="http://twitter.com/triplingual">@triplingual</a></small>
 					</p>
+					<aside class="notes">
+						<ul>
+							<li>I am not a headless WP expert</li>
+							<li>This is a research project</li>
+							<li>I got into it in part thanks to my coworker Pam (/me points to Pam)</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 				<section>
@@ -60,7 +67,7 @@
 					</ul>
 					<aside class="notes">
 						<ul>
-							<li>JAMstack is JavaScript, API(s), and Markup (or sometimes claimed to be Markdown)<li>
+							<li>JAMstack is JavaScript, API(s), and Markup (or sometimes Markdown)</li>
 							<li>CSS breaks the acronym, but it's in there as well</li>
 						</ul>
 					</aside>
@@ -74,7 +81,7 @@
 					</ul>
 					<aside class="notes">
 						<ul>
-							<li>Briefly discuss full Headless WP v Headless Light v Hydra</li>
+							<li>Headless WP v Headless Light v Hydra (multi-head)</li>
 							<li>I didn't explore Headless Light much, but it seemed worth a mention in case you want to pursue it</li>
 							<li>And to risk confusion, there's the possibility of meing multi-headed. This could mean keeping your regular WP front end but adding another view of your content that's retrieved from the REST API and uses a JAMstack setup to mirror and display your content</li>
 						</ul>
@@ -89,7 +96,7 @@
 						</ul>
 					</aside>
 				</section>
-				<section data-background="./img/gatsby-03.gif">
+				<section data-background="./img/gatsby-02.gif">
 				</section>
 				</section>
 				<section>
@@ -142,7 +149,7 @@
 						</ul>
 					</aside>
 				</section>
-				<section data-background="./img/face-palm_1f926.png" style="background-color: rgba(0,0,0,0.5);">
+				<section data-background="./img/face-palm_1f926.png" data-background-size="initial" data-background-repeat="repeat" style="background-color: rgba(0,0,0,0.5);">
 					<h2>Gatsby Detrimental Features</h2>
 					<ul>
 						<li>Underlying framework created and maintained by a profit-driven surveillance-loving amoral data sales corporation ¯\_(ツ)_/¯</li>
@@ -249,8 +256,8 @@
 					</p>
 					<h4 style="color:#000; background-color: rgba(255,255,255,.8)">Get This Preso</h4>
 					<p style="color:#000; background-color: rgba(255,255,255,.8)">
-						Responsive: <br />
-						Printable: 
+						Responsive: <a href="http://triptronix.net/resources/uncategorized/NERCOMP-WP-2020/">https://is.gd/nercomp2020headless</a><br />
+						Printable: <a href="http://triptronix.net/resources/uncategorized/NERCOMP-WP-2020/?print-pdf">https://is.gd/nercomp2020headlessprint</a>
 					</p>
 					<p style="color:#000; background-color: rgba(255,255,255,.8)">
 						<small>Made with <a href="https://github.com/hakimel/reveal.js/">reveal.js</a></small>
@@ -267,6 +274,7 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				hash: false,
+				showNotes: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
