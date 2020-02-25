@@ -38,11 +38,11 @@
 				<section data-background="./img/blanco-brown-butterfly.gif">
 					<aside class="notes">
 						<ul>
-							<li>What if you could have those fast page loads *and* a user-friendly content creation interface?</li>
+							<li>What if you could have those fast page loads *and* a content editor–friendly content creation interface?</li>
 						</ul>
 					</aside>
 				</section>
-				<section data-background="./img/scooby+gatsby-01.jpg">
+				<section data-background="./img/scooby+gatsby.jpg">
 					<h1>Going Headless with WordPress</h1>
 					<h2>NERCOMP WordPress Day 2020</h2>
 					<p>
@@ -60,24 +60,27 @@
 					</ul>
 					<aside class="notes">
 						<ul>
-							<li>Notes go here</li>
+							<li>JAMstack is JavaScript, API(s), and Markup (or sometimes claimed to be Markdown)<li>
+							<li>CSS breaks the acronym, but it's in there as well</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<h2>What is Headless WordPress?</h2>
 					<ul>
-						<li>disregarding (including deleting code for?) WordPress's built-in display mechanisms</li>
-						<li>reliance on WP's REST API</li>
-						<li>Headless Light</li>
+						<li>Abandoning WordPress's built-in display mechanisms</li>
+						<li>Reliance on WP's REST API</li>
+						<li>"Headless Light"</li>
 					</ul>
 					<aside class="notes">
 						<ul>
 							<li>Briefly discuss full Headless WP v Headless Light v Hydra</li>
+							<li>I didn't explore Headless Light much, but it seemed worth a mention in case you want to pursue it</li>
+							<li>And to risk confusion, there's the possibility of meing multi-headed. This could mean keeping your regular WP front end but adding another view of your content that's retrieved from the REST API and uses a JAMstack setup to mirror and display your content</li>
 						</ul>
 					</aside>
 				</section>
-				<section>
+				<section data-background="./img/gatsby-01.png" style="background-color: rgba(0,0,0,0.5);">
 					<h2>What is Gatsby?</h2>
 					<p>A specific platform for allowing you to have a headless CMS, including one whose content creation interface and content storage engine are from WordPress.</p>
 					<aside class="notes">
@@ -86,9 +89,11 @@
 						</ul>
 					</aside>
 				</section>
+				<section data-background="./img/gatsby-03.gif">
+				</section>
 				</section>
 				<section>
-					<h2>Benefits to Going Headless with WordPress</h2>
+					<h2>Headless WordPress Benefits</h2>
 					<ul>
 						<li>Load speed</li>
 						<li>Multiple outputs for your content</li>
@@ -102,26 +107,27 @@
 					</aside>
 				</section>
 				<section>
-					<h2>Detriments to Going Headless</h2>
+					<h2>Headless WordPress Detriments</h2>
 					<ul>
-						<li>Buh-bye (most) plugins</li>
+						<li>Buh-bye plugins and themes</li>
 						<li>Buh-bye web standards</li>
 						<li>Buh-bye content preview</li>
 						<li>Buh-bye WP content restrictions</li>
-						<li>Buh-bye gigantic theme universe</li>
+						<li>Buh-bye commenting</li>
 					</ul>
 					<aside class="notes">
 						<ul>
 							<li>Some major WP plugins are supported by some headless platforms, but most are, unsurprisingly, not.</li>
+							<li>So far, I've found just a little over 40 themes specifically for WordPress using Gatsby. 36 are on GitHub, where there is almost certainly a range of utility and maybe some duplication in the search results. Not so easy to port WordPress themes to Gatsby, either.</li>
 							<li>You can output an RSS feed from your new headless site, but going this route feels like there should have been a way to do this with RSS from WordPress</li>
 							<li>Content preview can be retained if you take the hydra approach I mentioned. You preview the content in the WP interface, but know that there may be differences in the eventual headless platform UI</li>
 							<li>You'll need to roll your own security for a secure site, and you'll have to do extra work to even retrieve any protected (passworded, admin-only restricted) content. The REST API correctly does not expose this content to the world.</li>
-							<li>So far, I've found just a little over 40 themes specifically for WordPress using Gatsby. 36 are on GitHub, where there is almost certainly a range of utility and maybe some duplication in the search results. Not so easy to port WordPress themes to Gatsby, either.</li>
+							<li>Commenting can be rewritten in Gatsby, though most of what I read suggested using an external system like Disqus. That's not appropriate for a course site, in my opinion, though.</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					<h2>Gatsby Features and Their Benefits</h2>
+					<h2>Gatsby Features + Benefits</h2>
 					<ul>
 						<li>Active community</li>
 						<li>No backward compatibility needs</li>
@@ -136,18 +142,18 @@
 						</ul>
 					</aside>
 				</section>
-				<section data-background="./img/face-palm_1f926.png">
-					<h2>Gatsby Features and Detriments</h2>
-					
+				<section data-background="./img/face-palm_1f926.png" style="background-color: rgba(0,0,0,0.5);">
+					<h2>Gatsby Detrimental Features</h2>
 					<ul>
 						<li>Underlying framework created and maintained by a profit-driven surveillance-loving amoral data sales corporation ¯\_(ツ)_/¯</li>
 						<li>Devices without scripting available are FAIL</li>
-						<li>Only starting to work on accessibility now</li>
+						<li>Accessibility very much a WIP</li>
 						<li>Unknown future</li>
 					</ul>
 					<aside class="notes">
 						<ul>
 							<li>Ah, Facebook. When I learned that React was a Facebook product and that Gatsby used React, I almost switched platforms for this talk. Instead, my strong recommendation is to use Gatsby for learning about working with headless WordPress and then move to something better.</li>
+							<li>Sarah, who you'll hear from later, tells me that Gatsby's accessibility lead is very good, and I trust Sarah.</li>
 							<li>Regarding the unknown future: With WordPress supporting something like 1/3 of websites —even if we discount some large portion of those sites as transitory in some way, the internet equivalent of utility pole flyers— people have a vested interest in it sticking around. Plus, they have income.</li>
 						</ul>
 					</aside>
@@ -157,17 +163,17 @@
 					<ul>
 						<li>Narrowcasting content</li>
 						<li>Improved content portability</li>
-						<li>Notes go here</li>
+						<li>Diffused security risks</li>
 					</ul>
 					<aside class="notes">
 						<ul>
 							<li>Narrowcasting could be for techical reasons (e.g. getting content to people in low-data mobile-only environments), content ones (pulling just one category of posts), or others.</li>
-							<li>Yes, you can export your WP content, but using Gatsby
+							<li>Yes, you can export your WP content, but using Gatsby gets your content into Markdown and can pull your media out.
 						</ul>
 					</aside>
 				</section>
 				<section>
-					<h2>Disadvantages against WordPress Alone</h2>
+					<h2>Disadvantages Against WordPress Alone</h2>
 					<ul>
 						<li>Maintenance</li>
 						<li>Possibly slower turnaround</li>
@@ -184,13 +190,15 @@
 				<section>
 					<h2>Common but Inaccurate Implications</h2>
 					<ul>
-						<li>[Hydra already discussed]</li>
+						<li>Metaphor implications</li>
 						<li>Not everything has to be reprogrammed in Gatsby</li>
-						<li>Notes go here</li>
+						<li>Page load speed</li>
 					</ul>
 					<aside class="notes">
 						<ul>
-							<li>Notes go here</li>
+							<li>As previously mentioned, you don't have to completely abandon your WordPress front end. Might be useful for editorial workflow, for instance</li>
+							<li>Writeups seem to assume you are committing 100% to Gatsby, and bringing everything over.</li>
+							<li>Page load speed is good and SEO placement can be good, but you might have pages that load perfectly fine now given your functionality needs.</li>
 						</ul>
 					</aside>
 				</section>
@@ -212,12 +220,12 @@
 				</section>
 				<section>
 					<h2>Summary</h2>
-					<p>Headless WordPress using Gatsby seems like a good idea if you are . . . </p>
+					<p>Headless WordPress may be worth more research if you are . . . </p>
 					<ul>
-						<li>. . . wanting to be independent of WordPress</li>
-						<li>. . . looking to reduce security vulnerability or someone in your infosec group has a bee in their bonnet about WordPress security</li>
+						<li>. . . wanting to be more independent of WordPress</li>
+						<li>. . . looking to reduce security exposure or someone in your infosec group has a bee in their bonnet about WordPress security</li>
 						<li>. . . feeling a lot of plugin bloat dragging your site</li>
-						<li>. . . looking to boost your site load speed and consequent </li>
+						<li>. . . looking to boost your site load speed and consequent SEO (Google) juice</li>
 					</ul>
 					<aside class="notes">
 						<p></p>
@@ -231,7 +239,7 @@
 						<li>Tutorials</li>
 					</ul>
 					<aside class="notes">
-						<p>Work through open web and official Gatsby baseline tutorials, especially if you've never worked with Node or advanced JavaScript for the web before. It's been over 15 years since I was working with JavaScript professionally, and I very much needed the tutorials. My pattern was to read overview articles, work through 2–3 open web tutorials, and then go back to the Gatsby official tutorials because that's how I like to learn: overview, hands-on, then the formal documentation.</p>
+						<p>Work through open web and official Gatsby baseline tutorials, especially if you've never worked with Node or React before. It's been over 15 years since I was working with JavaScript professionally, and I very much needed the tutorials. My pattern was to read overview articles, buildt things with 2–3 open web tutorials, and then go back to the Gatsby official tutorials because that's how I like to learn: overview, hands-on, then the formal documentation.</p>
 					</aside>
 				</section>
 				<section data-background="./img/goodson-todman.jpg">
